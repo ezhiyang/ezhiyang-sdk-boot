@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.github.theozhou</groupId>
-	<artifactId>ralph-sdk-spring-boot-starter</artifactId>
+	<groupId>com.ezhiyang</groupId>
+	<artifactId>ezhiyang-sdk-spring-boot-starter</artifactId>
 	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>ralph-sdk-spring-boot-starter</name>
-	<description>sdk boot starter for ralph</description>
-    <url>https://github.com/theozhou/ralph-sdk-boot</url>
+	<name>ezhiyang-sdk-spring-boot-starter</name>
+	<description>sdk boot starter for ezhiyang</description>
+    <url>https://github.com/ezhiyang/ezhiyang-sdk-boot</url>
     
     <developers>  
 	    <developer>  
@@ -66,8 +66,8 @@
         </dependency>
         
         <dependency>
-            <groupId>io.github.theozhou</groupId>
-            <artifactId>ralph-sdk</artifactId>
+            <groupId>com.ezhiyang</groupId>
+            <artifactId>ezhiyang-sdk</artifactId>
             <version>${ezy-sdk.version}</version>
         </dependency>
         
