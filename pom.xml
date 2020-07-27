@@ -42,7 +42,7 @@
         <velocity.version>1.7</velocity.version>
         <common-io.version>2.4</common-io.version>
         <github.global.server>github</github.global.server>
-        <ezy-sdk.version>1.0.2</ezy-sdk.version>
+        <ezy-sdk.version>1.0.1</ezy-sdk.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
     </properties>
     
@@ -150,6 +150,18 @@
                     <arguments>${arguments} -Psonatype-oss-release</arguments>
                 </configuration>
             </plugin>
+            <plugin>
+              <groupId>org.sonatype.plugins</groupId>
+              <artifactId>nexus-staging-maven-plugin</artifactId>
+              <version>1.6.8</version>
+              <extensions>true</extensions>
+              <configuration>
+                <serverId>ossrh</serverId>
+                <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              </configuration>
+            </plugin>
+
         </plugins>
     </build>
     
