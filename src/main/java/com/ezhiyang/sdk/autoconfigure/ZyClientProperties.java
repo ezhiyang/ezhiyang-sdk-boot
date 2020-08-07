@@ -16,6 +16,10 @@ public class ZyClientProperties {
   private String privatekey;
   
   private Long expiredTime;
+  
+  private Integer connectTimeout;
+  
+  private Integer socketTimeout;
 
   public String getUrl() {
     return url;
@@ -57,4 +61,22 @@ public class ZyClientProperties {
     this.expiredTime = expiredTime;
   }
 
+  public Integer getConnectTimeout() {
+    return connectTimeout;
+  }
+
+  public void setConnectTimeout(Integer connectTimeout) {
+    this.connectTimeout = connectTimeout;
+  }
+
+  public Integer getSocketTimeout() {
+    return socketTimeout;
+  }
+
+  public void setSocketTimeout(Integer socketTimeout) {
+    this.socketTimeout = socketTimeout;
+  }
+
+  
+  
 }

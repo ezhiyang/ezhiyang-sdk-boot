@@ -5,7 +5,7 @@
 
 	<groupId>com.ezhiyang</groupId>
 	<artifactId>ezhiyang-sdk-spring-boot-starter</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>jar</packaging>
 
 	<name>ezhiyang-sdk-spring-boot-starter</name>
@@ -42,7 +42,7 @@
         <velocity.version>1.7</velocity.version>
         <common-io.version>2.4</common-io.version>
         <github.global.server>github</github.global.server>
-        <ezy-sdk.version>1.0.2</ezy-sdk.version>
+        <ezy-sdk.version>1.0.3</ezy-sdk.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
     </properties>
     

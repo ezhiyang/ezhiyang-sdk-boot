@@ -33,6 +33,12 @@ public class ZySdkAutoConfiguration {
     if(properties.getExpiredTime() != null && properties.getExpiredTime() <= 7200) {
       config.setExpiredTime(properties.getExpiredTime());
     }
+    if(properties.getConnectTimeout() != null) {
+      config.setConnectTimeout(properties.getConnectTimeout());
+    }
+    if(properties.getSocketTimeout() != null) {
+      config.setSocketTimeout(properties.getSocketTimeout());
+    }
     return config;
   }
   
