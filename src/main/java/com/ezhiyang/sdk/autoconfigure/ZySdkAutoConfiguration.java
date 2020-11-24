@@ -11,7 +11,10 @@ import org.springframework.context.annotation.Configuration;
 import com.ezhiyang.sdk.core.cache.AbstractAuthCache;
 import com.ezhiyang.sdk.core.cache.MemoryAuthCache;
 import com.ezhiyang.sdk.core.context.SdkContext;
+import com.ezhiyang.sdk.core.decript.DecriptService;
+import com.ezhiyang.sdk.core.decript.DecriptServiceImpl;
 import com.ezhiyang.sdk.core.model.ClientConfig;
+import com.ezhiyang.sdk.util.StringUtils;
 
 @Configuration
 @ConditionalOnClass({ClientConfig.class,SdkContext.class})
@@ -41,6 +44,18 @@ public class ZySdkAutoConfiguration {
     }
     return config;
   }
+  
+  @Bean
+  @ConditionalOnMissingBean
+  public DecriptService decriptService() {
+    if(StringUtils.isNotBlank(properties.getPrivatekey()) 
+        && StringUtils.isNotBlank(properties.getZyPublicKey())) {
+      return new DecriptServiceImpl(properties.getPrivatekey(), properties.getZyPublicKey());
+    }
+    
+    return null;
+  }
+  
   
   
   @Bean

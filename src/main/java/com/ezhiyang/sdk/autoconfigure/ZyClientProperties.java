@@ -20,6 +20,8 @@ public class ZyClientProperties {
   private Integer connectTimeout;
   
   private Integer socketTimeout;
+  
+  private String zyPublicKey;
 
   public String getUrl() {
     return url;
@@ -77,6 +79,12 @@ public class ZyClientProperties {
     this.socketTimeout = socketTimeout;
   }
 
-  
-  
+  public String getZyPublicKey() {
+    return zyPublicKey;
+  }
+
+  public void setZyPublicKey(String zyPublicKey) {
+    this.zyPublicKey = zyPublicKey;
+  }
+
 }
