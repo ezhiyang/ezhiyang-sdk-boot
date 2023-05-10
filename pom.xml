@@ -5,7 +5,7 @@
 
 	<groupId>com.ezhiyang</groupId>
 	<artifactId>ezhiyang-sdk-spring-boot-starter</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.6</version>
 	<packaging>jar</packaging>
 
 	<name>ezhiyang-sdk-spring-boot-starter</name>
