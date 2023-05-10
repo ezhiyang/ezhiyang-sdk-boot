@@ -42,7 +42,7 @@
         <velocity.version>1.7</velocity.version>
         <common-io.version>2.4</common-io.version>
         <github.global.server>github</github.global.server>
-        <ezy-sdk.version>1.0.5</ezy-sdk.version>
+        <ezy-sdk.version>1.0.6</ezy-sdk.version>
         <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
     </properties>
     
